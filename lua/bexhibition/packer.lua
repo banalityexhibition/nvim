@@ -29,6 +29,13 @@ use ('mbbill/undotree')
 
 use ('tpope/vim-fugitive')
 
+use { 'rust-lang/rust.vim',
+    ft = 'rust',
+    config = function () 
+        vim.g.rustfmt_autosave = 1
+    end
+}
+
 use {
   'VonHeikemen/lsp-zero.nvim',
   branch = 'v2.x',
